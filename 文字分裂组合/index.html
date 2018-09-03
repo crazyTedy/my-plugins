@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,IE=9,IE=edge">
+	<title>中海油隐患标注系统</title>
+	<meta name="Copyright" content="Tencent">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/semantic0202.css">
+</head>
+
+<body style="background-color: rgb(73, 170, 199);">
+	<div class="section wrap_xy_2 active" id="section1" data-anchor="page2">
+		<div class="col_2_wrap mod_col_wrap ui_maxw clearfix ani_col_1">
+			<h2 class="mod_col_h2">中海油隐患标注系统</h2>
+			<div class="mod_col_text">
+				<p class="mod_col_title">输入一段需要标注的文字：</p>
+				<div class="analysis_wrap">
+					<div class="analysis_content ">
+						<textarea class="txt" name="" id="input_sec1" limit="110">H29井不动管柱反洗管线从井口区穿过顶甲板修井圆形井盖后无备用测试井盖封堵，人员在该区域工作时跌落人员伤害风险。
+						</textarea>
+						<div id="info"></div>
+						<!-- <p class="txt_warm">体验版最多可输入110个字</p> -->
+					</div>
+				</div>
+			</div>
+			<div class="mod_col_main result_main">
+				<p class="mod_col_title">分析结果：</p>
+				<dl class="row">
+					<dd class="mod_result_content result_words mCustomScrollbar _mCS_2 _mCS_1 mCS_no_scrollbar">
+						<div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0">
+							<div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr">
+								<div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0">
+									<ul id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" dir="ltr"></ul>
+								</div>
+							</div>
+						</div>
+					</dd>
+					<dd class="mod_result_content result_tabs">
+						<div id="wtype_ret" class="result_tabs_wrap"></div>
+					</dd>
+				</dl>
+			</div>
+			<div class="get_texts">
+				<div class="get_text"><ul class="device"></ul></div>
+				<div class="get_text"><ul class="Location"></ul></div>
+				<div class="get_text"><ul class="status"></ul></div>
+				<div class="get_text">
+					<ul class="danger"></ul>
+					<input type="text" id="addToDanger" placeholder="添加标签">
+				</div>
+				<button class="submit">提交结果</button>
+			</div>
+			<p class="res_status"></p>
+		</div>
+	</div>
+	<!-- loading 层 -->
+	<div id="loadingDivBack" style="display: none; position: absolute; top: 0; left: 0; width: 100%; background: #eeeeee; opacity: 0.7; filter: alpha(opacity=30); z-index: 100;"></div>
+	<div id="loadingDiv" style="display: none; position: absolute; cursor: wait; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; z-index: 101; background: #fff url('images/loading.gif') no-repeat scroll 5px 10px; border: 2px solid #95B8E7; color: #696969; font-family: \'Microsoft YaHei\'; ">正在提交，请等待...</div>
+	<script src="js/jquery-1.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery_003.js"></script>
+	<script type="text/javascript" src="js/semantic0202.js"></script>
+	<script>
+		$(function () {
+			$('.section').height($(window).height())
+			$("#mCSB_2_container").sortable();
+		})
+	</script>
+</body>
+
+</html>

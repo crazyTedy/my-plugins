@@ -1,0 +1,118 @@
+/*上传图片插件的样式*/
+.img-box .up-p{
+	margin-bottom: 20px;
+	font-size: 3em;
+	color: #555;
+}
+
+#get_analysis{
+	width: 100%;
+	height: 100%;
+}
+#get_analysis .swiper-container{
+	height: 100%;
+}
+.img-section{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 18px;
+	background: rgba(0,0,0,0.5);
+	z-index: 999;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.img-section .swiper-container{
+	margin: 0;
+	width: auto !important;
+}
+.img-section .swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 14em;
+}
+.z_photo{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.z_file{
+	position: relative;
+	margin-left: 10px;
+}
+.z_file  .file{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+.z_photo .up-section{
+	position: relative;
+	width: calc(15em - 10px);
+	height: 15em;
+	margin-left: 1em;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.2;
+}
+.up-section .close-upimg{
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	display: none;
+	z-index: 10;
+	width: 10%;
+}
+.up-section:hover .close-upimg{
+	display: none;
+}
+.up-section:hover .up-span{
+	visibility: visible;
+}
+.z_photo .uplod-img{
+	display: block;
+	max-width: 15em;
+	max-height: 15em;
+}
+.up-section:first-child{
+	opacity: 1;
+}
+.loading{
+    border: 1px solid #D1D1D1;
+	background:url(../images/loading.gif) no-repeat center;
+}
+.img-name-p{
+	display: none;
+}
+.up-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.up-section .up-img{
+	width: 100%;
+}
+.z_file .add-img {
+	display: block;
+	width: 15em;
+	height: 15em;
+	margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+
